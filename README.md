@@ -1,8 +1,17 @@
-# React + Vite
+# Ejercicios React - Rolling Code School 
+Prácticas con componentes, ciclo de vida del componente, eventos etc.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Ejercicio N°8: Pacientes de veterinaria - Dificultad: 🟢🟡🔴
+Crear una aplicación web que permite cargar un formulario para registrar una cita en una veterinaria, todos los datos solicitados en el formulario deben ser obligatorios.
+La aplicación debe permitir borrar las citas y estas deben ser guardadas en el localstorage.
 
-Currently, two official plugins are available:
+![Vista1](./public/veterinaria1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Si hay citas debo mostrarlas, con sus respectivos datos dentro de una card:
+
+<br>
+
+![Vista2](./public/veterinaria2.png)
+
+### Link de Deploy:
+- [Netlify](https://lucasecapdevila-tpn9react76i.netlify.app/)
