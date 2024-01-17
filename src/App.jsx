@@ -1,9 +1,14 @@
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-      <h1>Hola mundo</h1>
+      <main className="mainPage">
+        <h1>Hola mundo</h1>
+      </main>
+
+      <Footer />
     </>
   )
 }
