@@ -1,10 +1,12 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
 
 const ItemCita = () => {
   return (
     <>
-      <h1>Cita</h1>
+      {/* 
+        En caso de no haber citas:
+        <h3 className='text-center'>No hay citas</h3> 
+      */}
     </>
   )
 }
