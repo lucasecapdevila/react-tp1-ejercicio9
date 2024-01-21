@@ -1,6 +1,5 @@
 import React from 'react'
 import ItemCita from './ItemCita'
-import { Button } from 'react-bootstrap'
 
 const ListaCitas = () => {
   return (

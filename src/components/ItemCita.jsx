@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button, Card, CardBody, CardHeader, Form } from 'react-bootstrap'
-import Input from './Input'
+import { Button, Card, CardBody, CardHeader } from 'react-bootstrap'
 
 const ItemCita = () => {
   return (
@@ -14,18 +13,18 @@ const ItemCita = () => {
       */}
       <Card className='my-2'>
         <CardHeader className='d-flex align-items-center'>
-          <img className='mascota' src="../../public/mascotas/beagle.png" alt="mascota" />
+          <img className='mascota' src="https://cdn2.iconfinder.com/data/icons/veterinary-12/512/Veterinary_Icons-16-512.png" alt="mascota" />
           <div className='ms-2'>
             <h4>Mascota: Firulais</h4>
             <p className='m-0'>Dueño: Pepe</p>
           </div>
         </CardHeader>
         <CardBody>
-          <Form>
+          {/* <Form>
             <Input />
             <Input />
             <Input />
-          </Form>
+          </Form> */}
         </CardBody>
         <Button variant='secondary' className='ms-auto me-3 mb-2'>Borrar</Button>
       </Card>

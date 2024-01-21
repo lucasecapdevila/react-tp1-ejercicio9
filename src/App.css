@@ -27,3 +27,8 @@
     width: 50% !important;
   }
 }
+
+#sintomas{
+  height: 150px;
+  resize: none;
+}
