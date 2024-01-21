@@ -9,5 +9,21 @@
 }
 
 .mascota{
-  width: 100px;
+  width: 45%;
+}
+
+@media screen and (max-width: 767px) {
+  .mascota{
+    width: 35%;
+  }
+}
+
+.btnBorrarTodo{
+  width: 95% !important;
+}
+
+@media screen and (min-width: 576px) {
+  .btnBorrarTodo{
+    width: 50% !important;
+  }
 }

@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import './App.css'
 import Footer from './components/Footer'
 import Formulario from './components/Formulario'
@@ -9,9 +9,10 @@ function App() {
     <>
       <main className="my-4 mainPage">
         <Container>
-          <h2 className='text-center display-4'>Administrador de Pacientes de veterinaria</h2>
+          <h1 className='text-center display-4'>Administrador de Pacientes de veterinaria</h1>
           <Formulario />
           <ListaCitas />
+          <Button variant='danger' className='mt-3 btnBorrarTodo'>Borrar todas las citas</Button>
         </Container>
       </main>
 

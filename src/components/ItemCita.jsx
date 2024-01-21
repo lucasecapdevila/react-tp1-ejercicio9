@@ -4,7 +4,7 @@ import Input from './Input'
 
 const ItemCita = () => {
   return (
-    <>
+    <section className='col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column'>
       {/* 
         En caso de no haber citas:
         <h3 className='text-center'>No hay citas</h3> 
@@ -27,9 +27,9 @@ const ItemCita = () => {
             <Input />
           </Form>
         </CardBody>
+        <Button variant='secondary' className='ms-auto me-3 mb-2'>Borrar</Button>
       </Card>
-      <Button variant='danger'>Borrar</Button>
-    </>
+    </section>
   )
 }
 
