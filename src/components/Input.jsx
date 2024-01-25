@@ -1,19 +1,19 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 
-const Input = ({elemento, label, placeholder, type, name, minlength, maxlength, min, max}) => {
+const Input = ({elementoProp, labelProp, placeholderProp, typeProp, nameProp, minlengthProp, maxlengthProp, minProp, maxProp}) => {
   return (
-    <Form.Group controlId={name}>
-      <Form.Label>{label}</Form.Label>
+    <Form.Group controlId={nameProp}>
+      <Form.Label>{labelProp}</Form.Label>
       <Form.Control
-        as={elemento} 
-        label={label}
-        type={type}
-        placeholder={placeholder}
-        minLength={minlength}
-        maxLength={maxlength}
-        min={min}
-        max={max}
+        as={elementoProp} 
+        label={labelProp}
+        type={typeProp}
+        placeholder={placeholderProp}
+        minLength={minlengthProp}
+        maxLength={maxlengthProp}
+        min={minProp}
+        max={maxProp}
         required
       />
     </Form.Group>

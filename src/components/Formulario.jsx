@@ -9,45 +9,45 @@ const Formulario = () => {
         <Card.Body>
           <Form>
             <Input 
-              label="Nombre de mascota"
-              placeholder="Ej: Firulais"
-              type="text"
-              name="mascota"
-              minlength="2"
-              maxlength="25"
+              labelProp="Nombre de mascota"
+              placeholderProp="Ej: Firulais"
+              typeProp="text"
+              nameProp="mascota"
+              minlengthProp="2"
+              maxlengthProp="25"
             />
             <Input 
-              label="Nombre de dueno"
-              placeholder="Ej: Pepe"
-              type="text"
-              name="dueno"
-              minlength="2"
-              maxlength="25"
+              labelProp="Nombre de dueño"
+              placeholderProp="Ej: Pepe"
+              typeProp="text"
+              nameProp="dueno"
+              minlengthProp="2"
+              maxlengthProp="25"
             />
             <Input 
-              label="Fecha"
-              placeholder="Día de la cita (se puede seleccionar hasta el 31/12/2024"
-              type="date"
-              name="fecha"
-              min={new Date().toISOString().split("T")[0]}
-              max="2024-12-31"
+              labelProp="Fecha"
+              placeholderProp="Día de la cita (se puede seleccionar hasta el 31/12/2024)"
+              typeProp="date"
+              nameProp="fecha"
+              minProp={new Date().toISOString().split("T")[0]}
+              maxProp="2024-12-31"
             />
             <Input 
-              label="Hora"
-              placeholder="Hora de la cita"
-              type="time"
-              name="hora"
-              min="09:00"
-              max="18:00"
+              labelProp="Hora"
+              placeholderProp="Hora de la cita"
+              typeProp="time"
+              nameProp="hora"
+              minProp="09:00"
+              maxProp="18:00"
             />
             <Input
-              elemento="textarea"
-              label="Síntomas"
-              type="text"
-              placeholder="Describa brevemente los síntomas de su mascota"
-              name="sintomas"
-              minlength="10"
-              maxlength="200"
+              elementoProp="textarea"
+              labelProp="Síntomas"
+              typeProp="text"
+              placeholderProp="Describa brevemente los síntomas de su mascota"
+              nameProp="sintomas"
+              minlengthProp="10"
+              maxlengthProp="200"
             />
           </Form>
         </Card.Body>
