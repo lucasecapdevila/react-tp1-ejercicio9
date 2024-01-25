@@ -1,7 +1,16 @@
 import { Button, Card, Form } from 'react-bootstrap'
 import Input from './Input'
+import { useState } from 'react'
 
 const Formulario = ({crearCita}) => {
+  const [cita, setCita] = useState({
+    nombreMascota: '',
+    nombreDueño: '',
+    fecha: '',
+    hora: '',
+    sintomas: ''
+  })
+  
   return (
     <section>
       <Card>
