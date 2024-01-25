@@ -1,13 +1,13 @@
 import { Button, Card, Form } from 'react-bootstrap'
 import Input from './Input'
 
-const Formulario = () => {
+const Formulario = ({crearCita}) => {
   return (
-    <section className='d-flex flex-column'>
+    <section>
       <Card>
         <Card.Header as='h3' className='fw-bold fs-6 px-3'>Llenar el formulario para crear una cita:</Card.Header>
         <Card.Body>
-          <Form>
+          <Form className='d-flex flex-column' onSubmit={handleSubmitProp}>
             <Input 
               labelProp="Nombre de mascota"
               placeholderProp="Ej: Firulais"
@@ -15,6 +15,7 @@ const Formulario = () => {
               nameProp="mascota"
               minlengthProp="2"
               maxlengthProp="25"
+              setMascotaProp={setMascotaProp}
             />
             <Input 
               labelProp="Nombre de dueño"
@@ -49,10 +50,10 @@ const Formulario = () => {
               minlengthProp="10"
               maxlengthProp="200"
             />
+            <Button type='submit' variant='success' className='mt-2 align-self-end'>Agregar nueva cita</Button>
           </Form>
         </Card.Body>
       </Card>
-      <Button type='submit' variant='success' className='mt-2 align-self-end'>Agregar nueva cita</Button>
     </section>
   )
 }
