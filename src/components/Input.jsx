@@ -4,10 +4,9 @@ import { Form } from 'react-bootstrap'
 const Input = ({elementoProp, labelProp, placeholderProp, typeProp, nameProp, minlengthProp, maxlengthProp, minProp, maxProp, setStateProp, stateProp}) => {
   return (
     <Form.Group controlId={nameProp}>
-      <Form.Label>{labelProp}</Form.Label>
+      <Form.Label>{labelProp} <span>*</span></Form.Label>
       <Form.Control
         as={elementoProp} 
-        label={labelProp}
         type={typeProp}
         placeholder={placeholderProp}
         minLength={minlengthProp}
