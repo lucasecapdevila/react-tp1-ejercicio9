@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 
-const Input = ({elementoProp, labelProp, placeholderProp, typeProp, nameProp, minlengthProp, maxlengthProp, minProp, maxProp, setMascotaProp}) => {
+const Input = ({elementoProp, labelProp, placeholderProp, typeProp, nameProp, minlengthProp, maxlengthProp, minProp, maxProp, setStateProp, stateProp}) => {
   return (
     <Form.Group controlId={nameProp}>
       <Form.Label>{labelProp}</Form.Label>
@@ -14,7 +14,9 @@ const Input = ({elementoProp, labelProp, placeholderProp, typeProp, nameProp, mi
         maxLength={maxlengthProp}
         min={minProp}
         max={maxProp}
-        onChange={setMascotaProp}
+        name={nameProp}
+        value={stateProp}
+        onChange={setStateProp}
         required
       />
     </Form.Group>

@@ -15,6 +15,7 @@ function App() {
 
   const crearCita = cita => {
     setListaCitas([...listaCitas, cita])
+    console.log('Funciona');
   }
 
   return (
