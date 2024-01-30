@@ -1,12 +1,11 @@
 import React from 'react'
 import ItemCita from './ItemCita'
 
-const ListaCitas = ({cita}) => {
+const ListaCitas = ({citasProp}) => {
   return (
     <section className='row'>
       <h2 className='text-center display-4'>Administra las citas aquí</h2>
-      <p>{cita.nombreMascota}</p>
-      <ItemCita />
+      {citasProp.map((cita, posicionCita) => <ItemCita key={posicionCita} cita={cita} />)}
     </section>
   )
 }

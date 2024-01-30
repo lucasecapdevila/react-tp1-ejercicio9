@@ -15,7 +15,6 @@ function App() {
 
   const crearCita = cita => {
     setListaCitas([...listaCitas, cita])
-    console.log('Funciona');
   }
 
   return (
@@ -26,7 +25,9 @@ function App() {
           <Formulario 
             crearCita={crearCita}
           />
-          <ListaCitas />
+          <ListaCitas
+            citasProp={listaCitas}
+          />
           <Button variant='danger' className='mt-3 btnBorrarTodo'>Borrar todas las citas</Button>
         </Container>
       </main>
