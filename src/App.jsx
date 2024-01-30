@@ -17,6 +17,11 @@ function App() {
     setListaCitas([...listaCitas, cita])
   }
 
+  const eliminarCita = (id) => {
+    const copiaCitas = listaCitas.filter(cita => cita.id !== id)
+    setListaCitas(copiaCitas)
+  }
+
   return (
     <>
       <main className="my-4 mainPage">
@@ -27,6 +32,7 @@ function App() {
           />
           <ListaCitas
             citasProp={listaCitas}
+            eliminarCitaProp={eliminarCita}
           />
         </Container>
       </main>

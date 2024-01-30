@@ -33,6 +33,9 @@ const Formulario = ({crearCita}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    //  Establecer ID de la cita
+    cita.id = crypto.randomUUID()
+    
     crearCita(cita)
     setCita({
       nombreMascota: '',

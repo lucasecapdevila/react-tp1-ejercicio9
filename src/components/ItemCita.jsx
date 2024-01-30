@@ -1,7 +1,9 @@
 import React from 'react'
 import { Button, Card, CardBody, CardHeader } from 'react-bootstrap'
 
-const ItemCita = ({cita}) => {
+const ItemCita = ({cita, eliminarCitaProp}) => {
+  console.log(cita.id);
+
   return (
     <section className='col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column'>
       <Card className='my-2'>
@@ -17,7 +19,7 @@ const ItemCita = ({cita}) => {
           <p>Hora: {cita.hora}</p>
           <p>Síntomas: {cita.sintomas}</p>
         </CardBody>
-        <Button variant='secondary' className='ms-auto me-3 mb-2'>Borrar</Button>
+        <Button variant='secondary' className='ms-auto me-3 mb-2' onClick={() => eliminarCitaProp(cita.id)}>Borrar</Button>
       </Card>
     </section>
   )
