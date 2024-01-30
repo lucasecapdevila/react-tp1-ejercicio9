@@ -1,4 +1,4 @@
-import { Button, Card, Form, FormLabel } from 'react-bootstrap'
+import { Button, Card, Form } from 'react-bootstrap'
 import Input from './Input'
 import { useState } from 'react'
 
@@ -35,7 +35,7 @@ const Formulario = ({crearCita}) => {
     e.preventDefault()
     //  Establecer ID de la cita
     cita.id = crypto.randomUUID()
-    
+
     crearCita(cita)
     setCita({
       nombreMascota: '',
