@@ -28,7 +28,6 @@ function App() {
           <ListaCitas
             citasProp={listaCitas}
           />
-          <Button variant='danger' className='mt-3 btnBorrarTodo'>Borrar todas las citas</Button>
         </Container>
       </main>
 
